@@ -1,0 +1,15 @@
+{
+    "payoutId": "ID107386",
+    "agreementId": 1604,
+    "accountId": 55,
+    "executionDate": "2021-10-25",
+    "type": "PAYOUT",
+    "mscTransactionId": "t366630",
+    "msc": 4671.56,
+    "paymentTransactionId": 626142,
+    "amount": 233578.48,
+    "currency": "EUR",
+    "batchIds": [
+        "ID214747"
+    ]
+}

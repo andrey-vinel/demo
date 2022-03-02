@@ -1,0 +1,21 @@
+INSERT INTO agreement (id, sme_id, agreement_type, name, description, ref_agreement_id,product_id, external_id, status, institution_id, created_on, last_changed_on) VALUES('5478','47','BUSINESS_ACCOUNT',null,null,null,'1',null,'ACTIVE',2,'2021-10-25T11:36:41.387955','2021-10-25T11:36:41.388001');
+INSERT INTO agreement (id, sme_id, agreement_type, name, description, ref_agreement_id,product_id, external_id, status, institution_id, created_on, last_changed_on) VALUES('9210','47','E_COMMERCE_ACQUIRING','Nonprofit Organization Management Agreement','Nonprofit Organization Management Details',5478,'1','BL486366','ACTIVE',2,'2021-10-25T11:36:41.394107','2021-10-25T11:36:41.394110');
+INSERT INTO agreement (id, sme_id, agreement_type, name, description, ref_agreement_id,product_id, external_id, status, institution_id, created_on, last_changed_on) VALUES('1604','47','E_COMMERCE_ACQUIRING','Hospitality Agreement','Hospitality Details',5478,'1','AT962258','ACTIVE',2,'2021-10-25T11:36:41.395673','2021-10-25T11:36:41.395675');
+INSERT INTO agreement (id, sme_id, agreement_type, name, description, ref_agreement_id,product_id, external_id, status, institution_id, created_on, last_changed_on) VALUES('7611','47','CARD_PRESENT_ACQUIRING','Program Development Agreement','Program Development Details',5478,'1','DP199851','ACTIVE',2,'2021-10-25T11:36:41.395861','2021-10-25T11:36:41.395864');
+
+INSERT INTO agreement_parameter (id, agreement_id, category, name, value, created_on, last_changed_on) VALUES('2021','9210','ACQUIRING','mcc','1731','2021-10-25T11:36:41.394630','2021-10-25T11:36:41.394636');
+INSERT INTO agreement_parameter (id, agreement_id, category, name, value, created_on, last_changed_on) VALUES('31485','9210','ACQUIRING','scheduler','DAILY','2021-10-25T11:36:41.394816','2021-10-25T11:36:41.394819');
+INSERT INTO agreement_parameter (id, agreement_id, category, name, value, created_on, last_changed_on) VALUES('91277','9210','ACQUIRING','ccy','USD','2021-10-25T11:36:41.394866','2021-10-25T11:36:41.394869');
+INSERT INTO agreement_parameter (id, agreement_id, category, name, value, created_on, last_changed_on) VALUES('96133','9210','ACQUIRING','account','55','2021-10-25T11:36:41.394917','2021-10-25T11:36:41.394920');
+INSERT INTO agreement_parameter (id, agreement_id, category, name, value, created_on, last_changed_on) VALUES('84988','1604','ACQUIRING','mcc','5817','2021-10-25T11:36:41.395683','2021-10-25T11:36:41.395685');
+INSERT INTO agreement_parameter (id, agreement_id, category, name, value, created_on, last_changed_on) VALUES('78334','1604','ACQUIRING','scheduler','DAILY','2021-10-25T11:36:41.395719','2021-10-25T11:36:41.395721');
+INSERT INTO agreement_parameter (id, agreement_id, category, name, value, created_on, last_changed_on) VALUES('47068','1604','ACQUIRING','ccy','PLN','2021-10-25T11:36:41.395767','2021-10-25T11:36:41.395771');
+INSERT INTO agreement_parameter (id, agreement_id, category, name, value, created_on, last_changed_on) VALUES('33372','1604','ACQUIRING','account','55','2021-10-25T11:36:41.395778','2021-10-25T11:36:41.395780');
+INSERT INTO agreement_parameter (id, agreement_id, category, name, value, created_on, last_changed_on) VALUES('90737','7611','ACQUIRING','mcc','1731','2021-10-25T11:36:41.395872','2021-10-25T11:36:41.395874');
+INSERT INTO agreement_parameter (id, agreement_id, category, name, value, created_on, last_changed_on) VALUES('35981','7611','ACQUIRING','scheduler','DAILY','2021-10-25T11:36:41.395926','2021-10-25T11:36:41.395930');
+INSERT INTO agreement_parameter (id, agreement_id, category, name, value, created_on, last_changed_on) VALUES('47847','7611','ACQUIRING','ccy','USD','2021-10-25T11:36:41.395955','2021-10-25T11:36:41.395958');
+INSERT INTO agreement_parameter (id, agreement_id, category, name, value, created_on, last_changed_on) VALUES('93825','7611','ACQUIRING','account','55','2021-10-25T11:36:41.395965','2021-10-25T11:36:41.395970');
+
+INSERT INTO agreement_parameter_relational (parameter_id, related_parameter_id) VALUES('96133','91277');
+INSERT INTO agreement_parameter_relational (parameter_id, related_parameter_id) VALUES('33372','47068');
+INSERT INTO agreement_parameter_relational (parameter_id, related_parameter_id) VALUES('93825','47847');
